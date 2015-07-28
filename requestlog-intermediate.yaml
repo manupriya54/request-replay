@@ -10,8 +10,7 @@
       Content-Type: application/x-www-form-urlencoded
       X-Stripe-Client-User-Agent: '{"bindings_version":"1.23.0","lang":"ruby","lang_version":"2.1.2 p95 (2014-05-08)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux version 3.13.0-57-generic (buildd@brownie) (gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ) #95-Ubuntu SMP Fri Jun 19 09:28:15 UTC 2015","hostname":"caron"}'
       Host: api.stripe.com
-    body: |
-      amount=123&currency=usd&card[number]=4242424242424242&card[exp_month]=12&card[exp_year]=2020
+    body: "amount=123&currency=usd&card[number]=4242424242424242&card[exp_month]=12&card[exp_year]=2020"
   response:
     code: 200 OK
     headers:
