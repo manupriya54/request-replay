@@ -29,5 +29,5 @@ not on here!):
 * python: requests
 * ruby: rest-client
 * java/jvm: HttpURLConnection and yamlbeans
-* Go: built-in http library and go-yaml
+* Go: `net/http` and go-yaml
 * Common Lisp: drakma and cl-yaml
