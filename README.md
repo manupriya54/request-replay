@@ -18,13 +18,18 @@ request to api.stripe.com (see [our API
 docs](http://stripe.com/docs/api)) and compares the real response to
 the request's sample response. Since the responses we get from the API
 have fields that vary (timestamps, IDs), only check against the HTTP
-status code at first.
+status code.
+
+## What to focus on
+
+Please write this program as you would anything that you plan on
+running for a long time: Focus on maintainability and readability!
 
 ## Library recommendations
 
-We recommend these libraries for your language of choice (this is not
-an exhaustive list! Ask your interviewer if your language of choice is
-not on here!):
+Parsing YAML and making HTTPS requests is not fun! We recommend these
+libraries for your language of choice (this is not an exhaustive list!
+Ask your interviewer if your language of choice is not on here!):
 
 * python: [requests](http://www.python-requests.org/en/latest/)
 * ruby: [faraday](https://github.com/lostisland/faraday)
