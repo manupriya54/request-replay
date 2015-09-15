@@ -12,7 +12,7 @@ responses from the Stripe API. Each entry is a YAML map with the
 
 # Your task
 
-Write a script which, given each of these files (start with
+Write a program which, given each of these files (start with
 [requestlog-simple.yaml](requestlog-simple.yaml)!), replays each
 request to api.stripe.com (see [our API
 docs](http://stripe.com/docs/api)) and compares the real response to
