@@ -26,8 +26,9 @@ We recommend these libraries for your language of choice (this is not
 an exhaustive list! Ask your interviewer if your language of choice is
 not on here!):
 
-* python: requests
-* ruby: rest-client
+* python: [requests](http://www.python-requests.org/en/latest/)
+* ruby: [faraday](https://github.com/lostisland/faraday)
 * java/jvm: HttpURLConnection and yamlbeans
 * Go: `net/http` and go-yaml
+* Clojure: [clj-http.client](https://github.com/dakrone/clj-http) and [clj-yaml](https://github.com/lancepantz/clj-yaml)
 * Common Lisp: drakma and cl-yaml
