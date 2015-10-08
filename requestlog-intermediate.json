@@ -116,7 +116,7 @@
         "Accept": "*/*; q=0.5, application/xml",
         "User-Agent": "Stripe/v1 RubyBindings/1.23.0"
       },
-      "body": null,
+      "body": "",
       "method": "POST"
     },
     "response": {
@@ -151,7 +151,8 @@
         "Accept": "*/*; q=0.5, application/xml",
         "User-Agent": "Stripe/v1 RubyBindings/1.23.0"
       },
-      "method": "GET"
+      "method": "GET",
+      "body": ""
     },
     "response": {
       "body": "{\"created\": 1437977955, \"receipt_number\": null, \"object\": \"refund\", \"charge\": \"ch_27U5scLw6ytdrHzio6iksSLE\", \"currency\": \"usd\", \"amount\": 123, \"balance_transaction\": \"txn_16T4xDKv5xscqGyhC5Fv259t\", \"reason\": null, \"id\": \"re_27U5yELw6ytdrHziqcCE5Ttr\", \"metadata\": {}}",
@@ -185,7 +186,8 @@
         "Accept": "*/*; q=0.5, application/xml",
         "User-Agent": "Stripe/v1 RubyBindings/1.23.0"
       },
-      "method": "GET"
+      "method": "GET",
+      "body": ""
     },
     "response": {
       "body": "{\"application_fee\": null, \"livemode\": false, \"currency\": \"usd\", \"invoice\": null, \"fraud_details\": {}, \"statement_descriptor\": null, \"captured\": true, \"receipt_number\": null, \"destination\": null, \"id\": \"ch_27U5scLw6ytdrHzio6iksSLE\", \"source\": {\"address_state\": null, \"last4\": \"4242\", \"dynamic_last4\": null, \"address_zip_check\": null, \"address_country\": null, \"id\": \"card_16T4rbKv5xscqGyhIHgZKFXK\", \"address_line2\": null, \"address_line1\": null, \"funding\": \"credit\", \"metadata\": {}, \"cvc_check\": null, \"exp_month\": 12, \"tokenization_method\": null, \"address_line1_check\": null, \"brand\": \"Visa\", \"object\": \"card\", \"fingerprint\": \"70RrlzfthHpu3e4l\", \"exp_year\": 2020, \"address_zip\": null, \"customer\": null, \"address_city\": null, \"name\": null, \"country\": \"US\"}, \"balance_transaction\": \"txn_16T4rbKv5xscqGyheVr5De3F\", \"receipt_email\": null, \"metadata\": {}, \"status\": \"succeeded\", \"amount_refunded\": 123, \"description\": null, \"refunded\": true, \"object\": \"charge\", \"paid\": true, \"failure_code\": null, \"customer\": null, \"refunds\": {\"has_more\": false, \"total_count\": 1, \"object\": \"list\", \"data\": [{\"created\": 1437977955, \"receipt_number\": null, \"object\": \"refund\", \"charge\": \"ch_27U5scLw6ytdrHzio6iksSLE\", \"currency\": \"usd\", \"amount\": 123, \"balance_transaction\": \"txn_16T4xDKv5xscqGyhC5Fv259t\", \"reason\": null, \"id\": \"re_27U5yELw6ytdrHziqcCE5Ttr\", \"metadata\": {}}], \"url\": \"/v1/charges/ch_27U5scLw6ytdrHzio6iksSLE/refunds\"}, \"created\": 1437977607, \"failure_message\": null, \"shipping\": null, \"amount\": 123, \"dispute\": null}",
