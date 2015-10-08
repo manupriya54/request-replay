@@ -17,4 +17,7 @@ Payload::Payload(const std::initializer_list<Pair>& pairs) {
     }
 }
 
+Payload::Payload(const std::string content) : content(content) {
+}
+
 } // namespace cpr
