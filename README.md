@@ -34,6 +34,6 @@ your interviewer if your language of choice is not on here!):
 | Clojure | [clj-http.client](https://github.com/dakrone/clj-http) | [data.json](https://github.com/clojure/data.json/) |
 | Common Lisp | [drakma](http://weitz.de/drakma/) | [cl-json](https://common-lisp.net/project/cl-json/) |
 | Go | [net/http](https://golang.org/pkg/net/http/) | [encoding/json](https://golang.org/pkg/encoding/json/) |
-| Java (JVM) | [HttpURLConnection](http://download.java.net/jdk7/archive/b123/docs/api/java/net/HttpURLConnection.html) or [OkHttp](http://square.github.io/okhttp/) | [Jackson](https://github.com/FasterXML/jackson) |
+| Java (JVM) | [OkHttp](http://square.github.io/okhttp/) | [Jackson](https://github.com/FasterXML/jackson) |
 | Python | [requests](http://www.python-requests.org/en/latest/) | [json](https://docs.python.org/2/library/json.html) |
 | Ruby | [faraday](https://github.com/lostisland/faraday) | [JSON](http://ruby-doc.org/stdlib-2.0.0/libdoc/json/rdoc/JSON.html) |
