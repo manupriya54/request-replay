@@ -1,14 +1,14 @@
 package com.stripe.interview;
 
-import com.google.gson.FieldAttributes;
+import com.google.gson.GsonBuilder;
 
 public class Main {
 	public static void main(String... args) {
+    useGSONForSomeReason("hello\n");
 		System.out.println("Hello world!");
 	}
 
-	public static boolean useGSONForSomeReason(String input) {
-		// do something silly, to prove that gson is included correctly.
-		return new FieldAttributes(null) == null;
+	public static void useGSONForSomeReason(String input) {
+    new GsonBuilder().create().toJson(input, System.out);
 	}
 }
