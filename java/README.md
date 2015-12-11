@@ -6,7 +6,7 @@ Some combination of this should execute the sample java project:
 ```bash
 $ cd stripe-interview/request-replay/java
 $ mvn clean -e install
-$ java -jar target/sample-HEAD-SNAPSHOT.jar
+$ mvn -e exec:java
 ```
 
 Libraries
