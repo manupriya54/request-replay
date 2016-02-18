@@ -13,18 +13,25 @@ $ sbt
 Libraries
 ---------
 
-We recommend you use [Spray][spray/spray-json] and [Scalaj HTTP][scalaj/scalaj-http] for implementation,
+We recommend you use [Spray-json][spray/spray-json] and [Scalaj HTTP][scalaj/scalaj-http] for implementation,
 but you can use whichever library you want if there is something you are more familiar with. We've added both
 libraries to this project, and included a `build.sbt` that includes them. You don't need to use our provided
 `build.sbt` file; feel free to use whichever build system you want.
 
-Spray
-----
+Spray-json
+----------
 
-The json library tries to parse classes from the nested JSON. We've
-provided a class that can be parsed in one step from the JSON --
-`com.stripe.interview.MyLog`. Hopefully this will reduce the amount
-of work that you need to do.
+Since learning all of spray-json during an interview would be very challenging,
+We've provided a class with some shotcuts to the JSON parsing --
+`com.stripe.interview.MyLog`. it includes all the custom json formats you might need.
+Hopefully this will reduce the amount of work that you need to do.
+
+If you have not used it before, section of the documentation is particularly helpful
+https://github.com/spray/spray-json#usage
+
+Scalaj-http
+------------
+There are better libraries than Scalaj-http in Scala, but it is very easy to learn and use for this exercise.
 
 [spray/spray-json]: https://github.com/spray/spray-json
 [scalaj/scalaj-http]: https://github.com/scalaj/scalaj-http

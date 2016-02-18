@@ -1,17 +1,18 @@
 package com.stripe.interview
 
 import spray.json._
+import MyLog._
 // import scalaj.http._
 
 object Main {
 
   def main(args: Array[String]): Unit = {
-    val myJson = useSprayForSomething("hello world")
-    print(myJson.prettyPrint)
+    val strings = useSprayForSomething("hello world")
+    print(strings.toJson.prettyPrint)
   }
 
-  def useSprayForSomething(input: String): JsValue = {
-    val source = s"""{ "your_string": "$input!" }"""
-    return source.parseJson.asJsObject
+  def useSprayForSomething(input: String): List[String] = {
+    val source = s"""["$input","a","b","c"]"""
+    source.parseJson.convertTo[List[String]]
   }
 }

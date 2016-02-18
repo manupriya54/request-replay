@@ -1,11 +1,12 @@
 package com.stripe.interview
 
-import spray.json.DefaultJsonProtocol._
+import spray.json.DefaultJsonProtocol
 
-object MyLog {
+object MyLog extends DefaultJsonProtocol{
   case class Request(val url:String, val headers: Map[String,String], body:String, method:String)
   case class Response(val body:String, val headers: Map[String,String], code:Int)
   case class Pair(request:Request,response:Response)
+  //only needed for the second question
   case class ExtractableResponse(`object`:String,id:String)
 
   implicit val responseFormat = jsonFormat3(Response.apply)
