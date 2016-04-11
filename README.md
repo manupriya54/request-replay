@@ -38,3 +38,4 @@ your interviewer if your language of choice is not on here!):
 | Python | [requests](http://www.python-requests.org/en/latest/) | [json](https://docs.python.org/2/library/json.html) |
 | Ruby | [faraday](https://github.com/lostisland/faraday) | [JSON](http://ruby-doc.org/stdlib-2.0.0/libdoc/json/rdoc/JSON.html) |
 | Scala | [scalaj-http](https://github.com/scalaj/scalaj-http) | [spray-json](https://github.com/spray/spray-json) |
+| JavaScript | [request](https://github.com/request/request) | [ES5 JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) |
