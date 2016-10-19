@@ -9,8 +9,8 @@ $ mvn clean -e install
 $ mvn -e exec:java
 ```
 
-Eclipse
-=======
+Using Eclipse
+-------------
 
 To open the project in Eclipse:
 
