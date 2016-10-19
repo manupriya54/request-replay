@@ -9,6 +9,18 @@ $ mvn clean -e install
 $ mvn -e exec:java
 ```
 
+Eclipse
+=======
+
+To open the project in Eclipse:
+
+- Navigate to: `File > Import > Maven > Existing Maven Project`
+- For "Root Directory" select the `request-replay/java` folder
+- Make sure the project is selected and click "Finish"
+
+After a few moments, the project will appear in the navigator under "sample".
+
+
 Libraries
 ---------
 
