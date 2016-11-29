@@ -12,7 +12,7 @@ the HTTP request to send, and the `response` entry giving a sample response.
 # Your task
 
 Write a program which, given each of these files (start with
-[requestlog-simple.json](requestlog-simple.json)!), replays each request to
+[requestlog-charges.json](requestlog-charges.json)!), replays each request to
 api.stripe.com (see [our API docs](http://stripe.com/docs/api)) and compares
 the real response to the request's sample response. Since the responses we get
 from the API have fields that vary (timestamps, IDs), only check against the
