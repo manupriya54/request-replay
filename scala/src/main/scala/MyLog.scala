@@ -1,17 +1,29 @@
 package com.stripe.interview
 
-import spray.json.DefaultJsonProtocol
 
-object MyLog extends DefaultJsonProtocol{
-  case class Request(val url:String, val headers: Map[String,String], body:String, method:String)
-  case class Response(val body:String, val headers: Map[String,String], code:Int)
+object MyLog {
+  case class Request(url:String, headers: Map[String,String], body:String, method:String)
+  case class Response(body:String, headers: Map[String,String], code:Int)
   case class Pair(request:Request,response:Response)
-  //only needed for the second question
+  //only useful for the second question
   case class ExtractableResponse(`object`:String,id:String)
+}
 
-  implicit val responseFormat = jsonFormat3(Response.apply)
-  implicit val requestFormat = jsonFormat4(Request.apply)
-  implicit val pairFormat = jsonFormat2(Pair.apply)
-  implicit val extractableResponse = jsonFormat2(ExtractableResponse.apply)
+object SprayJsonProtocol {
+  import spray.json.DefaultJsonProtocol._, spray.json.RootJsonFormat
+  import com.stripe.interview.MyLog._
+  implicit val responseFormat: RootJsonFormat[Response] = jsonFormat3(Response.apply)
+  implicit val requestFormat: RootJsonFormat[Request] = jsonFormat4(Request.apply)
+  implicit val pairFormat: RootJsonFormat[Pair] = jsonFormat2(Pair.apply)
+  implicit val extractableResponse: RootJsonFormat[ExtractableResponse] = jsonFormat2(ExtractableResponse.apply)
+}
+
+object CirceDecoders {
+  import io.circe._, io.circe.generic.semiauto._
+  import com.stripe.interview.MyLog._
+  implicit val responseDecoder: Decoder[Response] = deriveDecoder[Response]
+  implicit val requestDecoder: Decoder[Request] = deriveDecoder[Request]
+  implicit val pairDecoder: Decoder[Pair] = deriveDecoder[Pair]
+  implicit val extractableResponseDecoder: Decoder[ExtractableResponse] = deriveDecoder[ExtractableResponse]
 }
 

@@ -1,18 +1,29 @@
 package com.stripe.interview
 
 import spray.json._
-import MyLog._
+import DefaultJsonProtocol._
+
+import io.circe.parser._
 // import scalaj.http._
+import cats.syntax.either._
 
-object Main {
+object Main extends App{
 
-  def main(args: Array[String]): Unit = {
-    val strings = useSprayForSomething("hello world")
-    print(strings.toJson.prettyPrint)
-  }
+  val strings = parseJsonWithSpray("hello Spray")
+  println(strings.toJson.prettyPrint)
+  
+  val otherStrings = parseJsonWithCirce("hello Circe")
+  println(otherStrings.toJson.prettyPrint)
 
-  def useSprayForSomething(input: String): List[String] = {
+  def parseJsonWithSpray(input: String): List[String] = {
     val source = s"""["$input","a","b","c"]"""
     source.parseJson.convertTo[List[String]]
   }
+
+
+  def parseJsonWithCirce(input: String): List[String] = {
+    val source = s"""["$input","a","b","c"]"""
+      parse(source).flatMap(_.as[List[String]]).getOrElse(List.empty)
+  }
+
 }
