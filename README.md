@@ -31,6 +31,7 @@ your interviewer if your language of choice is not on here!):
 
 | Language | HTTP | JSON |
 | ------------- | ------------- | ------------- |
+| C# | [HttpClient](https://docs.microsoft.com/en-us/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client) | [Json.NET](https://www.newtonsoft.com/json) |
 | Clojure | [clj-http.client](https://github.com/dakrone/clj-http) | [data.json](https://github.com/clojure/data.json/) |
 | Common Lisp | [drakma](http://weitz.de/drakma/) | [cl-json](https://common-lisp.net/project/cl-json/) |
 | Go | [net/http](https://golang.org/pkg/net/http/) | [encoding/json](https://golang.org/pkg/encoding/json/) |
