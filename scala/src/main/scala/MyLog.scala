@@ -2,11 +2,11 @@ package com.stripe.interview
 
 
 object MyLog {
-  case class Request(url:String, headers: Map[String,String], body:String, method:String)
-  case class Response(body:String, headers: Map[String,String], code:Int)
-  case class Pair(request:Request,response:Response)
+  case class Request(url: String, headers: Map[String, String], body: String, method: String)
+  case class Response(body: String, headers: Map[String, String], code: Int)
+  case class Pair(request: Request, response: Response)
   //only useful for the second question
-  case class ExtractableResponse(`object`:String,id:String)
+  case class ExtractableResponse(`object`: String, id: String)
 }
 
 object SprayJsonProtocol {
