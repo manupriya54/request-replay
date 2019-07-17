@@ -31,6 +31,7 @@ public class MyLog {
 		public String url;
 		public Map<String, String> headers;
 		public String body;
+		public String method;
 
 		public String getUrl() {
 			return url;
@@ -42,6 +43,10 @@ public class MyLog {
 
 		public String getBody() {
 			return body;
+		}
+
+		public String getMethod() {
+			return method;
 		}
 	}
 }
