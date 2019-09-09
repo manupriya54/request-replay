@@ -37,7 +37,7 @@ your interviewer if your language of choice is not on here!):
 | Common Lisp | [drakma](http://weitz.de/drakma/) | [cl-json](https://common-lisp.net/project/cl-json/) |
 | Go | [net/http](https://golang.org/pkg/net/http/) | [encoding/json](https://golang.org/pkg/encoding/json/) |
 | Java (JVM) | [OkHttp](http://square.github.io/okhttp/) | [Gson](https://github.com/google/gson) |
-| Python | [requests](https://2.python-requests.org//en/master/) | [json](https://docs.python.org/2/library/json.html) |
+| Python | [requests](https://2.python-requests.org//en/master/) | [json](https://docs.python.org/3/library/json.html) |
 | Ruby | [excon](https://github.com/excon/excon) | [JSON](http://ruby-doc.org/stdlib-2.6.1/libdoc/json/rdoc/JSON.html) |
 | Scala | [scalaj-http](https://github.com/scalaj/scalaj-http) | [spray-json](https://github.com/spray/spray-json) |
 | JavaScript | [request](https://github.com/request/request) | [ES5 JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) |
