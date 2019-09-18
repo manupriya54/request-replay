@@ -28,23 +28,23 @@ long time: Focus on maintainability and readability!
 ## Library recommendations
 
 Parsing JSON and making HTTPS requests can be no fun!
-We recommend these libraries for your language of choice.
-(This is not an exhaustive list!
+We recommend these libraries for your language of choice,
+but you may use different JSON or HTTP libraries, if you prefer.
+This is not an exhaustive list!
 Ask your interviewer if your language of choice is not on here!
-You may use different JSON or HTTP libraries, if you prefer.):
 
-| Language      | HTTP                          | JSON              |
-| ------------- | ----------------------------- | ----------------- |
-| C++           | [cpr]                         | [nlohmann/json] |
-| C#            | [HttpClient] or [WebRequest]  | [Json.NET]        |
-| Clojure       | [clj-http.client]             | [data.json]      |
-| Common Lisp   | [drakma]                      | [cl-json]         |
-| Go            | [net/http]                    | [encoding/json]   |
-| Java          | [OkHttp]                      | [Gson]            |
-| JavaScript    | [request][js-req] or [fetch]  | [ES5 JSON]        |
-| Python        | [requests][py-requests]       | [json][py-json]   |
-| Ruby          | [excon]                       | [JSON][ruby-JSON] |
-| Scala         | [scalaj-http]                 | [spray-json]      |
+| Language      | HTTP                          | JSON                      |
+| ------------- | ----------------------------- | ------------------------- |
+| C++           | [cpr]                         | [nlohmann/json]           |
+| C#            | [HttpClient] or [WebRequest]  | [Json.NET]                |
+| Clojure       | [clj-http.client]             | [data.json]               |
+| Common Lisp   | [drakma]                      | [cl-json]                 |
+| Go            | [net/http]                    | [encoding/json]           |
+| Java          | [OkHttp]                      | [Gson]                    |
+| JavaScript    | [request][js-req] or [fetch]  | [ES5 JSON]                |
+| Python        | [requests][py-requests]       | [json][py-json]           |
+| Ruby          | [excon]                       | [JSON][ruby-JSON]         |
+| Scala         | [scalaj-http]                 | [spray-json] or [Circe]   |
 
 [cpr]: https://whoshuu.github.io/cpr/
 [nlohmann/json]: https://nlohmann.github.io/json/
@@ -54,16 +54,16 @@ You may use different JSON or HTTP libraries, if you prefer.):
 [Json.NET]: https://www.newtonsoft.com/json
 
 [clj-http.client]: https://clojars.org/clj-http
-[data.json]: https://github.com/clojure/data.json/
+[data.json]: http://clojure.github.io/data.json/
 
-[drakma]: http://weitz.de/drakma/
-[cl-json]: https://common-lisp.net/project/cl-json/
+[drakma]: https://edicl.github.io/drakma/
+[cl-json]: https://common-lisp.net/project/cl-json/cl-json.html
 
 [net/http]: https://golang.org/pkg/net/http/
 [encoding/json]: https://golang.org/pkg/encoding/json/
 
 [OkHttp]: http://square.github.io/okhttp/
-[Gson]: https://github.com/google/gson
+[Gson]: https://github.com/google/gson/blob/master/UserGuide.md
 
 [js-req]: https://github.com/request/request
 [fetch]: https://github.com/bitinn/node-fetch
@@ -73,10 +73,11 @@ You may use different JSON or HTTP libraries, if you prefer.):
 [py-json]: https://docs.python.org/3/library/json.html
 
 [excon]: https://github.com/excon/excon
-[ruby-JSON]: http://ruby-doc.org/stdlib-2.6.1/libdoc/json/rdoc/JSON.html
+[ruby-JSON]: https://ruby-doc.org/stdlib-2.6.1/libdoc/json/rdoc/JSON.html
 
 [scalaj-http]: https://github.com/scalaj/scalaj-http
 [spray-json]: https://github.com/spray/spray-json
+[Circe]: https://circe.github.io/circe/
 
 ## Known Issues
 
