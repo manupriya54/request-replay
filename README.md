@@ -35,37 +35,46 @@ You may use different JSON or HTTP libraries, if you prefer.):
 
 | Language      | HTTP                          | JSON              |
 | ------------- | ----------------------------- | ----------------- |
-| C++           | [cpr]                         | [nlohmann's json] |
+| C++           | [cpr]                         | [nlohmann/json] |
 | C#            | [HttpClient] or [WebRequest]  | [Json.NET]        |
 | Clojure       | [clj-http.client]             | [data.json]      |
 | Common Lisp   | [drakma]                      | [cl-json]         |
 | Go            | [net/http]                    | [encoding/json]   |
 | Java          | [OkHttp]                      | [Gson]            |
-| JavaScript    | [request] or [fetch]          | [ES5 JSON]        |
-| Python        | [requests]                    | [json]            |
-| Ruby          | [excon]                       | [JSON]            |
+| JavaScript    | [request][js-req] or [fetch]  | [ES5 JSON]        |
+| Python        | [requests][py-requests]       | [json][py-json]   |
+| Ruby          | [excon]                       | [JSON][ruby-JSON] |
 | Scala         | [scalaj-http]                 | [spray-json]      |
 
-[cpr]: https://github.com/whoshuu/cpr
-[nlohmann's json]: https://github.com/nlohmann/json
+[cpr]: https://whoshuu.github.io/cpr/
+[nlohmann/json]: https://nlohmann.github.io/json/
+
 [HttpClient]: https://docs.microsoft.com/en-us/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client
 [WebRequest]: https://docs.microsoft.com/en-us/dotnet/api/system.net.webrequest
 [Json.NET]: https://www.newtonsoft.com/json
-[clj-http.client]: https://github.com/dakrone/clj-http
+
+[clj-http.client]: https://clojars.org/clj-http
 [data.json]: https://github.com/clojure/data.json/
+
 [drakma]: http://weitz.de/drakma/
 [cl-json]: https://common-lisp.net/project/cl-json/
+
 [net/http]: https://golang.org/pkg/net/http/
 [encoding/json]: https://golang.org/pkg/encoding/json/
+
 [OkHttp]: http://square.github.io/okhttp/
 [Gson]: https://github.com/google/gson
-[request]: https://github.com/request/request
+
+[js-req]: https://github.com/request/request
 [fetch]: https://github.com/bitinn/node-fetch
 [ES5 JSON]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
-[requests]: https://python-requests.org/
-[json]: https://docs.python.org/3/library/json.html
+
+[py-requests]: https://2.python-requests.org/
+[py-json]: https://docs.python.org/3/library/json.html
+
 [excon]: https://github.com/excon/excon
-[JSON]: http://ruby-doc.org/stdlib-2.6.1/libdoc/json/rdoc/JSON.html
+[ruby-JSON]: http://ruby-doc.org/stdlib-2.6.1/libdoc/json/rdoc/JSON.html
+
 [scalaj-http]: https://github.com/scalaj/scalaj-http
 [spray-json]: https://github.com/spray/spray-json
 
