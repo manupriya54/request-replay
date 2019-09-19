@@ -31,7 +31,7 @@ Parsing JSON and making HTTPS requests can be no fun!
 We recommend these libraries for your language of choice,
 but you may use different JSON or HTTP libraries, if you prefer.
 This is not an exhaustive list!
-Ask your interviewer if your language of choice is not on here!
+Ask your interviewer if your language of choice is not on here.
 
 | Language      | HTTP                          | JSON                      |
 | ------------- | ----------------------------- | ------------------------- |
@@ -41,10 +41,24 @@ Ask your interviewer if your language of choice is not on here!
 | Common Lisp   | [drakma]                      | [cl-json]                 |
 | Go            | [net/http]                    | [encoding/json]           |
 | Java          | [OkHttp]                      | [Gson]                    |
-| JavaScript    | [request][js-req] or [fetch]  | [ES5 JSON]                |
+| JavaScript    | [node-fetch]                  | [ES5 JSON]                |
 | Python        | [requests][py-requests]       | [json][py-json]           |
 | Ruby          | [excon]                       | [JSON][ruby-JSON]         |
 | Scala         | [scalaj-http]                 | [spray-json] or [Circe]   |
+
+## Known Issues
+
+### Old OpenSSL versions
+
+The built-in version of OpenSSL on MacOS is old and our API [does not support it].
+If you encounter SSL or TCP errors (for example, "Connection reset by peer")
+when connecting to the Stripe API, this might be the cause.
+If you don't have a newer version of Ruby (or Python) and OpenSSL
+(installed via [brew](https://brew.sh/)) immediately available,
+the quickest way to avoid losing time is to switch to
+a pre-configured loaner laptop,
+which your interviewer can pick up from the Recruiting pod.
+
 
 [cpr]: https://whoshuu.github.io/cpr/
 [nlohmann/json]: https://nlohmann.github.io/json/
@@ -66,7 +80,7 @@ Ask your interviewer if your language of choice is not on here!
 [Gson]: https://github.com/google/gson/blob/master/UserGuide.md
 
 [js-req]: https://github.com/request/request
-[fetch]: https://github.com/bitinn/node-fetch
+[node-fetch]: https://github.com/bitinn/node-fetch
 [ES5 JSON]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
 
 [py-requests]: https://2.python-requests.org/
@@ -79,16 +93,4 @@ Ask your interviewer if your language of choice is not on here!
 [spray-json]: https://github.com/spray/spray-json
 [Circe]: https://circe.github.io/circe/
 
-## Known Issues
-
-### Old OpenSSL versions
-
-The built-in version of OpenSSL on MacOS is old and
-our API [does not support it](https://support.stripe.com/questions/how-do-i-upgrade-my-openssl-to-support-tls-1-2).
-If you encounter SSL or TCP errors (for example, "Connection reset by peer")
-when connecting to the Stripe API, this might be the cause.
-If you don't have a newer version of Ruby (or Python) and OpenSSL
-(installed via [brew](https://brew.sh/)) immediately available,
-the quickest way to avoid losing time is to switch to
-a pre-configured loaner laptop,
-which your interviewer can pick up from the Recruiting pod.
+[does not support it]: https://support.stripe.com/questions/how-do-i-upgrade-my-openssl-to-support-tls-1-2
