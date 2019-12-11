@@ -27,6 +27,7 @@ After a few moments, the project will appear in the navigator under "sample".
 
 To open the project in IntelliJ IDEA:
 
+- Ensure the bundled "Maven Integration" plugin is enabled.
 - Select `File > New > Project from Existing Sources...` from the menu.
 - Navigate in the file selector to this `java` subdirectory.
 - Ensure "Import project from external model" and "Maven" are selected, click Next.
