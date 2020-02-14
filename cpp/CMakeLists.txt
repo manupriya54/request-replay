@@ -41,4 +41,9 @@ add_executable(cpp
         replay.cpp)
 
 
-target_link_libraries(cpp curl)
+IF (WIN32)
+        find_package(CURL CONFIG REQUIRED)
+        target_link_libraries(cpp PRIVATE CURL::libcurl)
+ELSE()
+        target_link_libraries(cpp curl)
+ENDIF()
