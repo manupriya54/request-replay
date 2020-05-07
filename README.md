@@ -40,7 +40,7 @@ Ask your interviewer if your language of choice is not on here.
 | Clojure       | [clj-http.client]             | [data.json]               |
 | Common Lisp   | [drakma]                      | [cl-json]                 |
 | Go            | [net/http]                    | [encoding/json]           |
-| Java          | [OkHttp]                      | [Gson]                    |
+| Java / Kotlin | [OkHttp]                      | [Gson]                    |
 | JavaScript    | [node-fetch]                  | [ES5 JSON]                |
 | Python        | [requests][py-requests]       | [json][py-json]           |
 | Ruby          | [excon]                       | [JSON][ruby-JSON]         |
