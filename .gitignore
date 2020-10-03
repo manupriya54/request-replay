@@ -24,3 +24,10 @@ Sessionx.vim
 tags
 # Persistent undo
 [._]*.un~
+
+# C++
+/cpp/replay
+/cpp/replay.dSYM/
+/cpp/build/
+/cpp/clangd/
+*.o
