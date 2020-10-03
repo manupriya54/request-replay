@@ -6,10 +6,23 @@ A couple tips specifically if you're solving this problem using C++:
 
 We recommend you use [nlohmann's json library][nlohmann/json] and
 [cpr][whoshuu/cpr] for implementation. We've added both libraries to
-this project, and included a `Makefile` that will build them in, as well
-as enabling debug symbols and C++11 (C++17 if supported).
+this project, and included a `CMakeLists.txt` that will build them
+(using C++17 if supported). If you don't have a preferred CMake workflow,
+you can use this:
+
+```bash
+# Generate the project scaffolding into cpp/build/
+cd cpp
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
+
+# Build the project
+cmake --build build
+```
+
 You'll need to have [libcurl](https://curl.haxx.se/download.html)
 installed - we'll link it automatically.
+
+See "Library Installation Instructions" below if don't have `cmake` or `libcurl`.
 
 ## json
 
@@ -31,5 +44,13 @@ We also made a small change from the public docs: `cpr::Payload` has
 an overloaded constructor which can take a `std::string`, instead of
 only accepting a list of key/value pairs.
 
-[nlohmann/json]: https://nlohmann.github.io/json/
+[nlohmann/json]: https://github.com/nlohmann/json
 [whoshuu/cpr]: https://whoshuu.github.io/cpr/
+
+## Library Installation Instructions
+
+- If you're using Debian or Ubuntu, you likely want to run `sudo apt-get install cmake build-essential`.
+- If you're using macOS with HomeBrew installed, you might want to run `brew install cmake curl`.
+
+For other platforms or more detailed instructions, refer back to [Stripe's C++
+interview setup](https://github.com/stripe/cpp-interview-prep).
