@@ -83,7 +83,7 @@ which your interviewer can pick up from the Recruiting pod.
 [node-fetch]: https://github.com/bitinn/node-fetch
 [ES5 JSON]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
 
-[py-requests]: https://requests.kennethreitz.org/en/master/
+[py-requests]: https://requests.readthedocs.io/en/master/
 [py-json]: https://docs.python.org/3/library/json.html
 
 [excon]: https://github.com/excon/excon
