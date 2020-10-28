@@ -52,7 +52,7 @@ add_executable(replay
 
 IF (WIN32)
         find_package(CURL CONFIG REQUIRED)
-        target_link_libraries(cpp PRIVATE CURL::libcurl)
+        target_link_libraries(replay PRIVATE CURL::libcurl)
 ELSE()
-        target_link_libraries(cpp curl)
+        target_link_libraries(replay curl)
 ENDIF()
