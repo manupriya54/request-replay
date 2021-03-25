@@ -36,7 +36,7 @@ Ask your interviewer if your language of choice is not on here.
 | Language      | HTTP                          | JSON                      |
 | ------------- | ----------------------------- | ------------------------- |
 | C++           | [cpr]                         | [nlohmann/json]           |
-| C#            | [HttpClient] or [WebRequest]  | [Json.NET]                |
+| C#            | [HttpClient]                  | [Json.NET]                |
 | Clojure       | [clj-http.client]             | [data.json]               |
 | Common Lisp   | [drakma]                      | [cl-json]                 |
 | Go            | [net/http]                    | [encoding/json]           |
@@ -63,8 +63,7 @@ which your interviewer can pick up from the Recruiting pod.
 [cpr]: https://whoshuu.github.io/cpr/
 [nlohmann/json]: https://nlohmann.github.io/json/
 
-[HttpClient]: https://docs.microsoft.com/en-us/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client
-[WebRequest]: https://docs.microsoft.com/en-us/dotnet/api/system.net.webrequest
+[HttpClient]: https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-5.0
 [Json.NET]: https://www.newtonsoft.com/json
 
 [clj-http.client]: https://clojars.org/clj-http
