@@ -42,6 +42,7 @@ Ask your interviewer if your language of choice is not on here.
 | Go            | [net/http]                    | [encoding/json]           |
 | Java / Kotlin | [OkHttp]                      | [Gson]                    |
 | JavaScript    | [node-fetch]                  | [ES5 JSON]                |
+| PHP           | [curl][php-curl] or [guzzle]  | [json][php-json]          |
 | Python        | [requests][py-requests]       | [json][py-json]           |
 | Ruby          | [excon]                       | [JSON][ruby-JSON]         |
 | Scala         | [scalaj-http]                 | [spray-json] or [Circe]   |
@@ -81,6 +82,10 @@ which your interviewer can pick up from the Recruiting pod.
 [js-req]: https://github.com/request/request
 [node-fetch]: https://github.com/bitinn/node-fetch
 [ES5 JSON]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
+
+[php-curl]: https://www.php.net/manual/en/book.curl.php
+[guzzle]: https://docs.guzzlephp.org/en/stable/
+[php-json]: https://www.php.net/manual/en/book.json.php
 
 [py-requests]: https://requests.readthedocs.io/en/master/
 [py-json]: https://docs.python.org/3/library/json.html
