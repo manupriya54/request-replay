@@ -15,7 +15,6 @@
   <packaging>jar</packaging>
   <name>Stripe Interview Request-Replay Starter Pack</name>
 
-
   <description>A maven project to help you bootstrap Request-Replay in Java.</description>
 
   <properties>
@@ -27,6 +26,33 @@
     <junit.version>4.13.1</junit.version>
     <exec_maven.version>1.2.1</exec_maven.version>
   </properties>
+
+  <repositories>
+    <repository>
+      <id>central</id>
+      <name>Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+      <layout>default</layout>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>central</id>
+      <name>Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+      <layout>default</layout>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+    </pluginRepository>
+  </pluginRepositories>
 
   <dependencies>
     <dependency>
